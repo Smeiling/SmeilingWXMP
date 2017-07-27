@@ -44,9 +44,7 @@
 </view>
 
 <view class="horizontal-view title-container">
-  <navigator url="../homepage/home">
     <button bindtap="goForCode" class="more-button" type="default" hover-class="other-button-hover"> See more </button>
-  </navigator>
 </view>
 
 <view class="divider"></view>
