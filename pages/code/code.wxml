@@ -1,0 +1,11 @@
+<!--home.wxml-->
+<!-- <text>home.wxml</text> -->
+
+<swiper style="height:400rpx;" indicator-dots="true" indicator-color="rgba(250,250,250,0.3)" indicator-active-color="rgba(250,250,250,0.8)"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+    <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>

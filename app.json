@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/code/code",
+    "pages/product/product",
+    "pages/news/news",
+    "pages/logs/logs",
+    "pages/component/index",
+    "pages/design/design",
+    "pages/write/write"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Smeiling",
+    "navigationBarTextStyle": "black"
+  }
+}

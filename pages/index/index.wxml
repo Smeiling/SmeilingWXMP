@@ -1,0 +1,146 @@
+<!--index.wxml-->
+
+<swiper style="height:400rpx;" indicator-dots="true" indicator-color="rgba(250,250,250,0.3)" indicator-active-color="rgba(250,250,250,0.8)"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+    <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="panel-container vertical-view">
+  <view class="horizontal-view title-container">
+    <view class="line"></view>
+    <view class="vertical-view title-label-container">
+      <!-- <text class="title-label">精品案例</text>
+      <text class="title-label-eng">Product Details</text> -->
+      <image class="label-icon" src="resources/icon_code.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+
+  <view class="horizontal-view title-container">
+    <text class="title-label">Coding</text>
+  </view>
+  <view class="table">
+    <view class="tr">
+      <block wx:for="{{workList1}}">
+        <view class="td vertical-view">
+          <image mode="aspectFill" class="work-image" src="{{item}}"/>
+          <text class="work-label">关于我</text>
+        </view>
+      </block>
+    </view>
+    <view class="tr">
+      <block wx:for="{{workList2}}">
+        <view class="td vertical-view">
+          <image mode="aspectFill" class="work-image" src="{{item}}"/>
+          <text class="work-label">关于我</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<view class="horizontal-view title-container">
+  <navigator url="../homepage/home">
+    <button bindtap="goForCode" class="more-button" type="default" hover-class="other-button-hover"> See more </button>
+  </navigator>
+</view>
+
+<view class="divider"></view>
+
+<view class="panel-container vertical-view">
+  <view class="horizontal-view title-container">
+    <view class="line"></view>
+    <view class="vertical-view title-label-container">
+      <image class="label-icon" src="resources/icon_learn.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+
+  <view class="horizontal-view title-container">
+    <text class="title-label">Learning</text>
+  </view>
+  <view class="table">
+    <view class="tr">
+      <block wx:for="{{workList3}}">
+        <view class="td vertical-view">
+          <image mode="aspectFill" class="work-image" src="{{item}}"/>
+          <text class="work-label">关于我</text>
+        </view>
+      </block>
+    </view>
+    <view class="tr">
+      <block wx:for="{{workList4}}">
+        <view class="td vertical-view">
+          <image mode="aspectFill" class="work-image" src="{{item}}"/>
+          <text class="work-label">关于我</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+
+<view class="horizontal-view title-container">
+    <button class="more-button" type="default" hover-class="other-button-hover"> See more </button>
+</view>
+
+
+<view class="divider"></view>
+
+<view class="panel-container vertical-view">
+  <view class="horizontal-view title-container">
+    <view class="line"></view>
+    <view class="vertical-view title-label-container">
+      <image class="label-icon" src="resources/icon_read.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+
+  <view class="horizontal-view title-container">
+    <text class="title-label">Reading</text>
+  </view>
+
+
+  
+  <view class="vertical-view write-image-container">
+    <image class="write-image" src="http://7xqdw6.com1.z0.glb.clouddn.com/illustration2.png"></image>
+  </view>
+
+  <view class="horizontal-view title-container">
+    <button class="more-button" type="default" hover-class="other-button-hover"> Read my blog </button>
+  </view>
+
+</view>
+
+<view class="divider"></view>
+
+<view class="panel-container vertical-view">
+  <view class="horizontal-view title-container">
+    <view class="line"></view>
+    <view class="vertical-view title-label-container">
+      <image mode="aspectFit" class="label-icon" src="resources/icon_travel.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+
+  <view class="horizontal-view title-container">
+    <text class="title-label">Traveling</text>
+  </view>
+
+
+  
+  <view class="vertical-view write-image-container">
+    <image mode="aspectFit" class="write-image" src="resources/img_map.png"></image>
+  </view>
+
+  <view class="horizontal-view title-container">
+    <button class="more-button" type="default" hover-class="other-button-hover"> See more </button>
+  </view>
+
+</view>
+
+<view class="divider"></view>
